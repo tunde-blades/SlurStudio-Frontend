@@ -1,0 +1,30 @@
+.playing{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+background-color: rgb(0, 4, 12);
+}
+.playing span{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+.songTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+.songTitle small{
+    font-size: 15px;
+}
+.pause,
+.play{
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* color: white;  */
+
+}
+a{
+    color: white;
+}
+.container{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.bookbtn{
+    width: max-content;
+    color: white;
+    padding: 10px;
+    background:  rgb(85, 184, 250);
+    border: none;
+    margin: 5% 0;
+    border-radius: .5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+.bookbtn:hover{
+    transition:  .3s ease-in-out;
+    color: white;
+    background: rgba(85, 184, 250, 0.541);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: cursive;
+    padding:0;
+}
+.logo img{
+    width: 25px;
+}
+.logo span{
+    color:rgb(85, 184, 250);
+}
+.login{
+    position: absolute;
+}
+

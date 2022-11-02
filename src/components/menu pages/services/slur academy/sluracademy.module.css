@@ -1,0 +1,94 @@
+.academy{
+    position: relative;
+    top: 130px;
+}
+.academy article{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 200px;
+}
+.academy article section{
+    position: relative;
+}
+.academyContent{
+    width: 100%;
+    padding: 10px 0;
+}
+.academy h1{
+    font-size: 40px;
+}
+.academy h2{
+    width: 70%;
+}
+.academy .academyContent span{
+    color:  rgb(85, 184, 250);
+}
+
+
+.academy picture{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.academy picture .price{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: rgb(28, 105, 5);
+    color: white;
+    padding:10px 8px ;
+    border-radius: .5em 0 0 .5em ;
+
+}
+.academy img{
+    flex: 1;
+    width: 30%;
+    max-width: 600px;
+}
+@media (min-width:800px) {
+    .academy article {
+        gap: 70px;
+    }
+.academy article section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    /* height: 500px; */
+}
+.academy article section button{
+    position: absolute;
+    top: 60%;
+}
+.academyContent{
+    width: 100%;
+}
+.gallery{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+iframe{
+    max-width: 700px;
+}
+#regbtn{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+}
+@media (min-width:1000px) {
+    .academy article section button{
+    position: absolute;
+    top: 40%;
+}
+.academyContent{
+    width: 80%;
+}
+}

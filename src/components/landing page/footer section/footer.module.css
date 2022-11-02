@@ -1,0 +1,26 @@
+.box{
+    background-color: rgb(0, 4, 12);
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+.footercontent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.address{
+    width: 50%;
+}
+.follow ul{
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+.terms{
+    width: 100%;
+    color: rgb(189, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

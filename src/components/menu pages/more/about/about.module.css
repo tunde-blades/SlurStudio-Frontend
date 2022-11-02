@@ -1,0 +1,87 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+.aboutcontainer{
+    box-sizing: border-box;
+    position: relative;
+   display: flex;
+   margin-top: 70px;
+}
+.aboutbox{
+    width: 80%;
+    text-align: left;
+    position: relative;
+    margin-top: 20px;
+}
+.aboutbox h1{
+    font-size: 40px;
+}
+.aboutbox span{
+    color:  rgb(243, 67, 67);
+}
+.aboutarticle{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+}
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.aboutarticle h2{
+    width: 60%;
+}
+.aboutarticle picture{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.aboutarticle picture img{
+    flex: 1;
+    width: 40%;
+    max-width: 700px;
+
+}
+.founder{
+    margin: 100px 0;
+    width: 100%;
+    max-width: 500px;
+}
+.founderBox{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.founder picture{
+    width: 100%;
+}
+.founder picture img{
+    width: 90%;
+    max-width: 200px;
+}
+.founder .founderDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+@media (min-width:800px) {
+.aboutContent{
+    width: 70%;
+}
+.aboutarticle picture {
+    width: 60%;
+}
+.aboutarticle picture img{
+    max-width: 800px;
+}
+}

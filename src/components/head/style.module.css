@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;   
+}
+.desktopnav{
+    display: none;
+}
+.headcontent{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(0, 4, 12);
+    color: white;
+    padding:2% 5%;
+    z-index: 2;
+    z-index: 100;
+}
+
+input{
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    padding:2px 5px;
+}
+.icons{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cancelnav{
+        cursor: pointer;
+    }
+.searchbox{
+    background-color: rgb(0, 4, 12);
+    margin: 10px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    border-radius: 3px;
+    border: 1px solid rgba(167, 166, 166, 0.425);
+    padding: 5px 10px;
+}
+.searchbox:hover
+.searchicon{
+        color: rgb(214, 234, 247);
+}
+.searchbox:hover{
+     border: 1px solid rgb(214, 234, 247);
+}
+.searchicon,
+.menuicon,
+::placeholder{
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.menuicon:hover{
+    transition: .3s ease-in-out;
+    font-size: 17px;
+    color: rgb(214, 234, 247);
+}
+.overlay{
+    position: fixed;
+    left: 0;
+    background-color: rgba(0, 4, 12, 0.863);
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+.menucontent{
+    box-sizing: border-box;
+    padding: 10px;  
+    min-width: 270px;
+    max-width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(0, 4, 12);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 100;
+}
+.menucontent menu{
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-items: flex-end;
+    gap: 15px;
+    color: grey;
+    margin-bottom: 10%;
+    padding: 10px;
+}
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    text-align: center;
+    padding: 2%;
+    margin: 5% 0;
+    border: 1px solid;
+    color: rgb(243, 67, 67);
+    font-size: 17px;
+    cursor: pointer;
+}
+.dashicon{
+    color: rgb(243, 67, 67);
+}
+.dashboard:hover .dashicon{
+    transition: all .3s ease-in-out;
+    color: rgb(85, 184, 250);
+}
+.dashboard:hover {
+    transition: all .3s ease-in-out;
+    border: 1px solid rgb(85, 184, 250);
+    color: rgb(85, 184, 250);
+}
+.menucontent ul{
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-items: flex-end;
+    list-style: none;
+    
+}
+.menucontent ul span{
+    margin-top: 15%;
+    /* margin-bottom: 5%; */
+    padding: 5% 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 5px;
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+.menucontent menu li{
+    /* background-color: rgb(26, 25, 25); */
+    text-transform: capitalize;
+    font-size: 12px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding:10px 15px;
+    border: 1px solid grey;
+    border-radius: .3em;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.menucontent menu li:hover{
+    background-color:   rgb(243, 67, 67) ;
+    color: rgb(0, 4, 12);
+    transition: all .2s ease-in-out;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 20%;
+    cursor: pointer;
+}
+.profileicon{
+    font-size: 50px;
+}
+
+.float{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    font-size: 12px;
+}
+
+
+@media (min-width:800px) {
+    .desktopnav{
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 5px;
+        z-index: 1000;
+    }
+    .navbtn{
+        display: none;
+    }
+    .mobilenav{
+        display: none;
+    }
+    .headcontent{
+        padding:15px 5%;
+    }
+    .logo{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #sidebarlogo{
+        display: none;
+    }
+    input{
+        background-color: rgba(240, 248, 255, 0);
+        width: 300px;
+    }
+     .menucontent{
+        height: 50px;
+     }
+    .menucontent h1{
+        display: none;
+    }
+    .dashboard{
+        display: none;
+    }
+    .cancelnav{
+        display: none;
+    }
+    .menucontent{
+        width: 100%;
+        margin: 0;
+        position: relative;
+        left: -10%;
+        background-color: rgba(240, 248, 255, 0);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .overlay{
+        display: none;
+    }
+    .list li{
+        width: 100px;
+    }
+    .menucontent ul{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+    .menucontent ul span{
+        background-color: rgb(0, 4, 12);
+        padding: 5px 0;
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .menucontent menu{
+        position: fixed;
+        padding: 20px;
+        background-color: rgb(0, 4, 12);
+        border-radius: .3em;
+        margin-top: 40px;
+    }
+    .menucontent menu li{
+        align-items: flex-start;
+    }
+    .profile{
+    position: absolute;
+    right: -30%;
+    top:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    z-index: 20;
+}
+.profile small{
+    display: none;
+}
+    .float{
+        display: none;
+    }
+}

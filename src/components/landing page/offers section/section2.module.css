@@ -1,0 +1,123 @@
+.offer{
+     background: url('../../../images/music-1874621_1920.jpg');
+     background-position: right ;
+     
+}
+
+.box{
+    box-sizing: border-box;
+    padding: 10% 0;
+   
+}
+
+.box h4{
+    color: rgb(123, 124, 126);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box ol{
+    margin: 10px 0;
+    padding: 10px 0;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.box ol button{
+    text-transform: capitalize;
+    color: rgb(0, 4, 12);
+    border: 1px solid rgb(0, 4, 12);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: .5em;
+    padding: 10px;
+    cursor: pointer;
+}
+.box ol button:hover{
+    transition:  .3s ease-in-out;
+    color: white;
+    background-color: rgb(207, 4, 4);
+}
+.box button.click{
+    color: white;
+    background-color: rgba(207, 4, 4, 0.63);
+}
+.box ul{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.box ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.box img{
+    width: 130%;
+    height: 140%;
+    position: absolute;
+    left: -15%;
+    z-index: -1;
+    opacity: 40%;
+}
+.single{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+    text-shadow: 2px 0px 3px  white;
+}
+.single ul{
+    margin: 0;
+}
+.single h3{
+    color: rgb(0, 4, 12);
+    font-size: 30px;
+}
+.single p{
+    color: rgb(0, 4, 12);
+    width: 80%;
+    font-size: 20px;
+}
+
+@media (min-width:700px) {
+    .single h3{
+        font-size: 40px;
+    }
+    .single p{
+        font-size: 25px;
+    }
+    .single ul li{
+   font-size: 1.2rem;
+}
+}
+
+@media (min-width:1000px) {
+    .box ul{
+    margin-top: 50px;
+}
+.box img{
+    width: 30em;
+    position: relative;
+    opacity: 100%;
+}
+    .single{
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.295);
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        gap: 20px;
+    }
+    .single h3{
+        font-size: 60px;
+    }
+    .single p{
+        font-size: 35px;
+    }
+}

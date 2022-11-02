@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.playbox{
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:100px 5%;
+    background: url('../../../images/th\ \(14\).jpeg');
+    background-color: rgba(0, 0, 0, 0.534);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.playdetails{
+    margin-bottom: 50px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+.playcontrols{
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+}
+.songsheader{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.songsheader header{
+    color: rgb(0, 4, 12);
+}
+.songsheader p{
+    font-size: 15px;
+    color: white;
+    background-color:rgb(0, 4, 12);
+    padding: 5px;
+    cursor: pointer;
+}
+.songsheader p:hover{
+    transition: .2s ease-in-out;
+    color: black;
+    background-color: rgb(85, 184, 250);
+}
+.playlist{
+    margin-top: 5%;
+}
+.playlist li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(196, 196, 196, 0.527);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2%;
+    padding: 15px;
+    margin-top: 10px;
+    width: auto;
+    border-radius: .5em;
+}
+.btns{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+/* .playlist li:hover .btns{
+    color: white;
+} */
+.playlist li:hover,
+.playlist li:hover .btns{
+    transition: .3s ease-in-out;
+    background-color: rgb(0, 4, 12);
+    color: white;
+}
+
+

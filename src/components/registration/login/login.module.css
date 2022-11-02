@@ -1,0 +1,134 @@
+.login{
+    box-sizing: border-box;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: max-content;
+    width:80%;
+    background-color: rgba(0, 4, 12, 0.89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid;
+    border-image-source: linear-gradient(45deg, rgb(85, 184, 250), white,purple);
+    border-image-slice: 1;
+}
+
+.logincontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login .logo{
+    display: none;
+}
+.login .loginbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    top: 20%;
+}
+.login .formbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login form{
+    width: 80%;
+    position: relative;
+     top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login label{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px;
+    color: rgb(231, 231, 231);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+    margin-bottom: 20px;
+}
+.login label p{
+    width: 70px;
+}
+.login input{
+    text-transform: lowercase;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+.login h1{
+    color:  rgb(85, 184, 250);
+}
+.loginbtn{
+    font-size: 16px;
+    position: relative;
+    right: -40%;
+    color: white;
+    background-color:  rgb(85, 184, 250);
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: .5em;
+}
+.loginbtn:hover{
+    transition: .2s ease-in-out;
+    background-color:  rgb(85, 184, 250);
+}
+.checkbox{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+.check{
+    width: 10%;
+}
+.signupbtnbox{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.signupbtn{
+    cursor: pointer;
+    color: rgb(85, 184, 250);
+}
+.signupbtn:hover{
+    color: rgb(144, 211, 255);
+}
+@media (min-width:800px) {
+    .login{
+        max-width: 70%;
+    }
+    .login p{
+        color: white;
+    }
+    .login .logo{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 40%;
+        max-height: 100%;
+        font-size: 30px;
+    }
+    .login .logo img{
+        width: 70%;
+    }
+    .login .logo span{
+        color: rgb(144, 211, 255);
+    }
+}

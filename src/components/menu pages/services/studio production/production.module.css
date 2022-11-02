@@ -1,0 +1,88 @@
+.production{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.production .header{
+    overflow: hidden;
+    min-width: 300px;
+    width: 50%;
+}
+.production article{
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
+}
+.production .heads{
+    margin-top: 50px;
+}
+.production section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.production section menu{
+    max-width: 220px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(209, 209, 209, 0.185);
+}
+.production section menu small{
+    color: rgb(6, 172, 238);
+    font-weight: bold;
+}
+.production p{
+    max-width: 500px;
+}
+.production h1 {
+    font-size: 40px;
+    width: 80%;
+}
+.production h1 span{
+    color: red;
+}
+.production h5{
+    padding: 10px 0;
+    color: rgb(6, 172, 238);
+    width: 150px;
+}
+.production article img{
+    width: 200px;
+}
+.production .produced img{
+    width: 100px;
+    /* max-width: 300px; */
+}
+.production .produced{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.production .produced li{
+    width: 170px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+.production .produced h5{
+    color: grey;
+}
+.production .produced a{
+    color: blue;
+}
+.production .mixing, .stem{
+    max-width: 500px;
+}
+
+@media (min-width:700px) {
+    .production section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}

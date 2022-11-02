@@ -1,0 +1,113 @@
+.contactcontainer{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+.contactbox .header{
+    width: 80%;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactbox .header h2{
+    font-size: 40px;
+}
+.contactbox .header span{
+    color: rgb(85, 184, 250);
+}
+.contactbox header h2,
+.contactbox header p{
+    color: rgb(0, 4, 12);
+}
+.contactbox ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 200px;
+}
+.contactbox li{
+    width: 100%;
+    padding: 30px 0;
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactbox li img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.contactbox li h2{
+    width: 80%;
+    font-size: 30px;
+}
+.contactbox li p{
+    width: 80%;
+}
+
+
+@media (min-width:700px) {
+
+    .contactbox .header{
+        width: 50%;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    /* .contactbox .header h2,
+     .contactbox .header p{
+        width: 60%;
+    } */
+    .header p{
+        font-size: 20px;
+    }
+    .contactbox header h2,
+    .contactbox header p{
+        color: black;
+        width: 30%;
+        text-align: left;
+    }
+    .contactbox ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* width: 90%; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);  
+}
+.contactbox li{
+    max-width:800px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 10%;
+}
+.contactbox li img{
+    width: 100%;
+    max-width: 400px;
+}
+.contactbox li .ContactText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+.contactbox li h2{
+    width: 100%;
+    font-size: 35px;
+}
+}

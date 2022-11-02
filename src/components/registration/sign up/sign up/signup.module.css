@@ -1,0 +1,191 @@
+.signup{
+    box-sizing: content-box;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: max-content;
+    width: 80%;
+    background-color: rgba(0, 4, 12, 0.89);
+    z-index: 25;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 5px solid;
+   border-image-source: linear-gradient(45deg, rgb(85, 184, 250), white,purple);
+    border-image-slice: 1;
+    z-index: 200;
+    margin-top:50px;
+}
+.signupcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup .logo{
+    display: none;
+}
+.joinhead{
+    position: relative;
+    left: 60%;
+    
+}
+.signup .signupbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.signup .formbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.signup form{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.signup label{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: 5px;
+    color: rgb(231, 231, 231);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+    /* background-color: white; */
+}
+.signup label p{
+    width: 60px;
+}
+.signup input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: unset;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    }
+.signup h1{
+    color:  rgb(85, 184, 250);
+}
+.songtype{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color:  rgb(85, 184, 250);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.signup ul{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    background-color:  white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    border-radius: .5em;
+}
+.signup li{
+    background-color: rgb(85, 184, 240);
+    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.651), inset 0 -2px 2px rgba(0, 0, 0, 0.527);
+    text-align: center;
+    color: rgb(0, 4, 12);
+    padding: 10px;
+    border: 1px solid rgba(85, 184, 250, 0.411);
+    cursor: pointer;
+}
+.signup li:hover{
+    background-color: rgb(10, 90, 136);
+    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.651), inset 0 -2px 2px rgba(0, 0, 0, 0.527);
+    border: none;
+}
+
+.signupbtn{
+    font-size: 16px;
+    position: relative;
+    right: -80%;
+    top: 0;
+    color: white;
+    background-color:  rgb(85, 184, 250);
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: .5em;
+}
+.signupbtn:hover{
+    transition: .2s ease-in-out;
+    background-color:  rgb(85, 184, 250);
+}
+.checkbox{
+    display: flex;
+    margin-top: 5px;
+    align-items: flex-start;
+    justify-content:flex-start;
+    gap: 5px;
+}
+.check{
+    margin-top:5px ;
+    width: 10%;
+}
+.loginbox{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 20px;
+}
+.loginbtn{
+    color: rgb(85, 184, 250);
+    cursor: pointer;
+}
+.loginbtn:hover{
+    color: rgb(144, 211, 255);
+}
+
+@media (min-width:800px) {
+    .signup{
+        max-width: 70%;
+    }
+    .signup .logo{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 40%;
+        max-height: 100%;
+        font-size: 30px;
+    }
+    .signup .logo img{
+        width: 100%;
+    }
+    .signup p{
+        color: white;
+    }
+    .signup .logo span{
+        color: rgb(144, 211, 255);
+    }
+}
