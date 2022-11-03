@@ -135,8 +135,6 @@ const [hideMenuList, sethideList] = useState(true)
     config:{friction:20, mass:1, tension:200}
   })
 
-
-
   return (
   <aside className={style.mobilenav}>
         <animated.div style={style} className={style.menucontent}>
