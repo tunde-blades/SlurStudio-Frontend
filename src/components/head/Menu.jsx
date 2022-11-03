@@ -1,6 +1,7 @@
 import React,{ useState} from 'react'
 import {Link} from 'react-router-dom'
 // import {CSSTransition} from 'react-transition-group'
+import logo from '../../images/SlurArena Icon.png'
 import { useSpring, animated } from 'react-spring'
 import style from './style.module.css'
 import { FaAngleDown,  FaUserCircle} from 'react-icons/fa'
@@ -140,9 +141,10 @@ const [hideMenuList, sethideList] = useState(true)
   <aside className={style.mobilenav}>
         <animated.div style={style} className={style.menucontent}>
           
-          <h3 className='logo' id={style.sidebarlogo}>
+         <div className='logo'>
+            <img src={logo} alt="" />
                 slur<span>S</span>tudio
-            </h3>
+            </div>
            
             <ul className={style.list}>
                 <li onMouseLeave ={hideAllList}><span  onMouseEnter = {displayList} onClick = {displayList}><p>Blog post</p><FaAngleDown /></span>
