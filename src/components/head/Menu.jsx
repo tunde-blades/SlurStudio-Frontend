@@ -145,9 +145,6 @@ const [hideMenuList, sethideList] = useState(true)
             </h3>
            
             <ul className={style.list}>
-              <li className={style.profile}>
-                <FaUserCircle className={style.profileicon}/><small>Bill Smith</small>
-                </li>
                 <li onMouseLeave ={hideAllList}><span  onMouseEnter = {displayList} onClick = {displayList}><p>Blog post</p><FaAngleDown /></span>
                     { showMenuList && <animated.menu style={fade}  className={style.display}>
                           <li ><Link to='/topmusic'>
@@ -208,20 +205,11 @@ const [hideMenuList, sethideList] = useState(true)
                     <li><Link to='/aboutus'>
                           About us
                         </Link></li>
-                        <li><Link to='http://localhost:3001'>
-                          Admin
-                        </Link></li>
                         <li onClick={displayLogin}>Login</li>
                   </animated.menu>
                 }
                 </li>
             </ul>
-            
-            {/* <div className={style.float}>
-                 <Link to='/booksession'>
-                  <button className='bookbtn'><FaBookmark/>Book session</button>
-                 </Link> 
-                </div> */}
         </animated.div>
 
         {openlogin && <Login/>}

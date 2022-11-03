@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {useSpring, animated } from 'react-spring'
 import logo from '../../images/SlurArena Icon.png'
-import {FaBars, FaSearch, FaTimes} from 'react-icons/fa'
+import {FaBars,  FaTimes} from 'react-icons/fa'
 import style from './style.module.css'
 import Menu from './Menu'
 import { Link } from 'react-router-dom'
@@ -22,10 +22,6 @@ function Header() {
         setCloseMenu(false)
     }
 
-    const [showsearch, setShowsearch] = useState(false)
-    function searchDisplay(){
-        setShowsearch(true)
-    }
 
 const fade = useSpring({
     marginTop: showMenu ? '0' : '-200px',
@@ -49,11 +45,6 @@ const fade = useSpring({
             </div>
             </Link> 
             <div className={style.icons}>
-                <span onClick={menuHide} className={style.searchbox}  onMouseEnter={searchDisplay}>
-                {showsearch && <input type="text" placeholder='Search'/>}
-                    
-                    <FaSearch className={style.searchicon}/>
-                </span>
                 <div className={style.navbtn}>
                     {closeMenu && showMenu?<FaTimes className={style.cancelnav} onClick={menuHide}/>:<FaBars  onClick={menuDisplay} className={style.menuicon}/>}
                     {showMenu && closeMenu &&  <animated.div style={fade}> <Menu/> </animated.div> }

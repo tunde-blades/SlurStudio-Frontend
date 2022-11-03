@@ -208,9 +208,6 @@ const [hideMenuList, sethideList] = useState(true)
                     <li><Link to='/aboutus'>
                           About us
                         </Link></li>
-                        <li><Link to='http://localhost:3001'>
-                          Admin
-                        </Link></li>
                         <li onClick={displayLogin}>Login</li>
                   </animated.menu>
                 }

@@ -2,8 +2,7 @@
     box-sizing: border-box;
     position: fixed;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,60%);
     height: max-content;
     width:80%;
     background-color: rgba(0, 4, 12, 0.89);
@@ -14,6 +13,7 @@
     border: 5px solid;
     border-image-source: linear-gradient(45deg, rgb(85, 184, 250), white,purple);
     border-image-slice: 1;
+    z-index: 2000;
 }
 
 .logincontainer{
@@ -110,6 +110,7 @@
 }
 @media (min-width:800px) {
     .login{
+        top: -15%;
         max-width: 70%;
     }
     .login p{
@@ -130,5 +131,10 @@
     }
     .login .logo span{
         color: rgb(144, 211, 255);
+    }
+}
+@media (min-width:1000px) {
+    .login{
+        top: -35%;
     }
 }
