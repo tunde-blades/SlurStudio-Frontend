@@ -2,8 +2,7 @@
     box-sizing: content-box;
     position: fixed;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%);
     height: max-content;
     width: 80%;
     background-color: rgba(0, 4, 12, 0.89);
