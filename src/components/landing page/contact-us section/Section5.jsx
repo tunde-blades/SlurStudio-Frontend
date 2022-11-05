@@ -29,7 +29,7 @@ export default function Section5() {
 
         setInterval(() => {
             setSentmsg(false)
-        }, 10000);
+        }, 5000);
         
     };
 

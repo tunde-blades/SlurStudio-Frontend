@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={style.box}>
         <div className='container'>
             <div className={style.footercontent}>
-                <div className={style.address}>
+                <address className={style.address}>
                     <h3 className='logo' id={style.sidebarlogo}><img src={logo} alt="" />
                         slur<span>S</span>tudio
                     </h3>
@@ -15,7 +15,7 @@ export default function Footer() {
                         slurarena@gmail.com
                     </address>
                     <small>+2347060518866</small>
-                </div>
+                </address>
             <div className={style.follow}>
                 <h4>follow us</h4>
                 <ul>
