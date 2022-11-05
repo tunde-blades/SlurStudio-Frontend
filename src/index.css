@@ -1,13 +1,24 @@
+/* font-family: 'Black Han Sans', sans-serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Paytone One', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Titillium Web', sans-serif;*/
+
+
 *{
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        /* color: white;  */
-
+    font-family: 'Paytone One', sans-serif;
 }
 a{
     color: white;
+}
+h1,h2,h3,h4{
+    font-family: 'Titillium Web', sans-serif;
+}
+p,li{
+    font-family: 'Paytone One', sans-serif;
 }
 .container{
     width: 80%;
@@ -38,7 +49,7 @@ a{
 .logo{
     display: flex;
     align-items: center;
-    font-family: cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding:0;
 }
 .logo img{
