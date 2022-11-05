@@ -45,7 +45,7 @@ export default function Section5() {
                         <button className='bookbtn'><a href='http://wa.me/2347060518866'> <FaBookmark />Book Session</a></button>
                         </div>
                         <button className={style.callbtn}>
-                            <a href="tel: 09051204002">Call us <FaPhone/></a> 
+                            <a href="tel: +2347060518866">Call us <FaPhone/></a> 
                         </button>
                     </div>
             </div>

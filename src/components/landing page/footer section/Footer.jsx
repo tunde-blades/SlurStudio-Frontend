@@ -11,11 +11,10 @@ export default function Footer() {
                     <h3 className='logo' id={style.sidebarlogo}><img src={logo} alt="" />
                         slur<span>S</span>tudio
                     </h3>
-                    <p>Producing solid sound...</p>
                     <address>5, Odebiyi street, Haruna College Road, Ifako Ogba, Lagos, Nigeria. <br />
                         slurarena@gmail.com
                     </address>
-                    <small>+2349051204002</small>
+                    <small>+2347060518866</small>
                 </div>
             <div className={style.follow}>
                 <h4>follow us</h4>

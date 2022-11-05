@@ -31,7 +31,7 @@ export default function Contact() {
                     <div className={style.ContactText}>
                       <h2>Talk to our Studio manager</h2>
                       <p>want to ask few questions personally? talk to our manager</p>
-                      <button className='bookbtn'><a href="tel: 09051204002">Call us</a> <FaPhone/>
+                      <button className='bookbtn'><a href="tel: +2347060518866">Call us</a> <FaPhone/>
                       </button>
                     </div>
                     <picture>
