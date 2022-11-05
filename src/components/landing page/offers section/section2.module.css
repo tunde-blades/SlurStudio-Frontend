@@ -1,6 +1,9 @@
 .offer{
      background: url('../../../images/music-1874621_1920.jpg');
+     background-color: rgba(248, 248, 248, 0.76);
+     background-blend-mode: color-dodge;
      background-position: right ;
+    height:70vh;
      
 }
 
@@ -83,6 +86,9 @@
 }
 
 @media (min-width:700px) {
+    .offer{
+        height: 80vh;
+    }
     .single h3{
         font-size: 40px;
     }
@@ -95,6 +101,9 @@
 }
 
 @media (min-width:1000px) {
+     .offer{
+        height: 100vh;
+    }
     .box ul{
     margin-top: 50px;
 }
@@ -105,7 +114,6 @@
 }
     .single{
         width: 70%;
-        background-color: rgba(255, 255, 255, 0.295);
         padding: 10px 30px;
         display: flex;
         flex-direction: column;
