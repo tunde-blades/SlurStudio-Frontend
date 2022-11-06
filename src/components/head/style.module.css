@@ -100,7 +100,6 @@ input{
     flex-direction: column;
     align-items: flex-end;
     justify-items: flex-end;
-    gap: 15px;
     color: grey;
     margin-bottom: 10%;
     padding: 10px;
@@ -159,7 +158,7 @@ input{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    margin-block: 5px;
     padding:10px 15px;
     border: 1px solid grey;
     border-radius: .3em;
@@ -171,26 +170,6 @@ input{
     background-color:   rgb(243, 67, 67) ;
     color: rgb(0, 4, 12);
     transition: all .2s ease-in-out;
-}
-.profile{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    gap: 5px;
-    width: 100%;
-    margin-bottom: 20%;
-    cursor: pointer;
-}
-.profileicon{
-    font-size: 50px;
-}
-
-.float{
-    position: absolute;
-    top: 50%;
-    left: -10%;
-    font-size: 12px;
 }
 
 

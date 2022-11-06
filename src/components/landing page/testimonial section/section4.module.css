@@ -9,8 +9,6 @@
 }
 .testimonial{
     margin: 20px 0;
-    /* width: 300%; */
-    gap: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +22,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    margin-block: 10px;
     flex-direction: column;
     padding:10px;
     background-color: rgba(243, 243, 247, 0.356);
