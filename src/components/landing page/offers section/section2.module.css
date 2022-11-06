@@ -94,6 +94,7 @@
     }
     .single{
         width: 70%;
+        min-height: 500px;
         padding: 10px 30px;
         display: flex;
         flex-direction: column;
