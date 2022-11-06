@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import style from './section2.module.css'
 import {  FaLink,  FaPhoneAlt } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import {motion} from 'framer-motion'
 
 
 
@@ -76,28 +77,28 @@ export default function Section2() {
                 <ul className="container">
                    {isOpen1 && 
                    
-                    <li>
+                    <motion.li layout>
                        <div className={style.single}>
                             <h3>Jingle</h3>
                             <p>We make corperate signage and adverts for companies and business enterprises</p>
                            <button className='bookbtn'><FaPhoneAlt /> <a href='http://wa.me/2347060518866'> Contact us</a></button>
                        </div>
-                    </li>
+                    </motion.li>
                    } 
 
                    {isOpen2 &&
 
-                    <li>
+                    <motion.li layout>
                        <div className={style.single}>
                             <h3>Slur Academy</h3>
                             <p>Slur Academy affordable and intensive practical base program in Music Production, Mixing and Mastering Engineering, Beat Making & Piano </p>
                             <button className='bookbtn'><FaLink/> <Link to='/sluracademy'>  Visit Page</Link></button>
                        </div>
-                    </li>
+                    </motion.li>
                    }
                    {isOpen3 &&
 
-                    <li>
+                    <motion.li layout>
                        <div className={style.single}>
                             <h3>Recoding Session</h3>
                             <p>Our Recording Session is 6HOURS. You can choose to bring your producer/engineer or work with our professionals <br />
@@ -106,22 +107,22 @@ export default function Section2() {
 
                             <button className='bookbtn'><FaPhoneAlt /><a href='http://wa.me/2347060518866'> Contact us</a> </button>
                        </div>
-                    </li>
+                    </motion.li>
                    }
                    {isOpen4 &&
 
-                    <li>
+                    <motion.li layout>
 
                        <div className={style.single}>
                             <h3>Mixing and Mastering</h3>
                             <p>We stimulate strength & expression into your song and keep it alive. We preserve the creative ideas in the project but make it better.</p>
                             <button className='bookbtn'><FaPhoneAlt /><a href='http://wa.me/2347060518866'> Contact us</a></button>
                        </div>
-                    </li>
+                    </motion.li>
                    }
                    {isOpen5 &&
 
-                    <li>
+                    <motion.li layout>
                        <div className={style.single}>
                             <h3>Music Production</h3>
                             <p>We produce all types of music from Sacular to Gospel; Amapiano, Afropop, Rap & Trap.
@@ -135,7 +136,7 @@ export default function Section2() {
                               
                             <button className='bookbtn'> <FaLink/> <Link to='/studioproduction'>Visit Page</Link></button>
                        </div>
-                    </li>
+                    </motion.li>
                    }
                 </ul>
             </div>
