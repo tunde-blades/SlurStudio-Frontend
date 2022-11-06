@@ -77,7 +77,7 @@ export default function Section2() {
                 <ul className="container">
                    {isOpen1 && 
                    
-                    <motion.li layout>
+                    <motion.li  animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}} >
                        <div className={style.single}>
                             <h3>Jingle</h3>
                             <p>We make corperate signage and adverts for companies and business enterprises</p>
@@ -88,7 +88,7 @@ export default function Section2() {
 
                    {isOpen2 &&
 
-                    <motion.li layout>
+                    <motion.li animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}}  >
                        <div className={style.single}>
                             <h3>Slur Academy</h3>
                             <p>Slur Academy affordable and intensive practical base program in Music Production, Mixing and Mastering Engineering, Beat Making & Piano </p>
@@ -98,7 +98,7 @@ export default function Section2() {
                    }
                    {isOpen3 &&
 
-                    <motion.li layout>
+                    <motion.li animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}} >
                        <div className={style.single}>
                             <h3>Recoding Session</h3>
                             <p>Our Recording Session is 6HOURS. You can choose to bring your producer/engineer or work with our professionals <br />
@@ -111,7 +111,7 @@ export default function Section2() {
                    }
                    {isOpen4 &&
 
-                    <motion.li layout>
+                    <motion.li animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}} >
 
                        <div className={style.single}>
                             <h3>Mixing and Mastering</h3>
@@ -122,7 +122,7 @@ export default function Section2() {
                    }
                    {isOpen5 &&
 
-                    <motion.li layout>
+                    <motion.li animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}} >
                        <div className={style.single}>
                             <h3>Music Production</h3>
                             <p>We produce all types of music from Sacular to Gospel; Amapiano, Afropop, Rap & Trap.
