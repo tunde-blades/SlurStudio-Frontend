@@ -20,7 +20,7 @@ export default function Section4() {
                     <p>I really enjoyed working with the <b>slurStudio.</b>  I got 1k likes and 1.5k plays within a week on my first single
                     </p>
                 </div>
-                <div className={style.testicontent}>
+                <div className={style.testiconten}>
                     <div className={style.texthead}>
                         <img src={image} alt=""/>
                         <div>
