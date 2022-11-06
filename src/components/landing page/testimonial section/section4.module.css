@@ -29,22 +29,7 @@
    box-shadow: inset 0 2px 2px rgba(155, 155, 155, 0.075),inset 0 -2px 2px rgba(186, 186, 189, 0.548);
     border-radius: .5em;
 }
-.testiconten{
-     border-right: 3px solid rgb(85, 184, 250);
-    border-left: 3px solid rgb(85, 184, 250);
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    margin-block: 10px;
-    flex-direction: column;
-    padding:10px;
-    background-color: rgba(243, 243, 247, 0.356);
-   box-shadow: inset 0 2px 2px rgba(155, 155, 155, 0.075),inset 0 -2px 2px rgba(186, 186, 189, 0.548);
-    border-radius: .5em;
 
-}
 .testicontent p,h2,q,b{
         color: rgb(0, 4, 12);
 }

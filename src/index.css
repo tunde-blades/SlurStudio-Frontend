@@ -11,6 +11,10 @@ font-family: 'Titillium Web', sans-serif;*/
     margin: 0;
     font-family: 'Paytone One', sans-serif;
 }
+.container>div>div>div{
+    margin-block: 5px;
+    /* background-color: red; */
+}
 a{
     color: white;
 }
