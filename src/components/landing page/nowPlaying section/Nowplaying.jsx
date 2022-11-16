@@ -14,7 +14,6 @@ function Nowplaying() {
 
   const audioPlayer = useRef();
 
-let index;
   let [isPlaying, setIsPlaying] = useState(false)
   let togglePlayPause = ()=>{
     const prevValue = isPlaying
@@ -27,25 +26,18 @@ let index;
     
   }
   let next = ()=>{
-    setIsPlaying(index=2)
+  
   }
     let previous = ()=>{
-    // if (index < musics.length) {
-    //   return musics[index--]
-    // }
-    // else if(index > musics.length ){
-    //   return musics[musics.length --]
-    // }
-  }
+      
+    }
     
-
   return (
     <div className={style.playing}>
         <span><FaMusic/><p className={style.songTitle}>{isPlaying ? <small>Now playing </small>: <small>Play</small> } <small>Free sample Rap Beat</small></p><FaBackward onClick={previous}/><small onClick={togglePlayPause}> {isPlaying?<FaPause className={style.pause}/> : <FaPlay className={style.play}/>}</small><FaForward onClick={next}/>
           <audio ref = {audioPlayer} src={music1} preload='metadata' loop></audio>
         </span>
         
-
     </div>
   )
 }

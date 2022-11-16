@@ -9,46 +9,29 @@ import {motion} from 'framer-motion'
 export default function Section2() {
 
 
-    const [isOpen1, setIsOpen1] = useState(false)
-    const [isOpen2, setIsOpen2] = useState(false)
-    const [isOpen3, setIsOpen3] = useState(false)
-    const [isOpen4, setIsOpen4] = useState(false)
-    const [isOpen5, setIsOpen5] = useState(true)
+const [isOpen,setIsOpen]= useState([false,false,false,false,true])
+    // const [isOpen[0], setisOpen[0]] = useState(false)
+    // const [isOpen[1], setisOpen[1]] = useState(false)
+    // const [isOpen[2], setisOpen[2]] = useState(false)
+    // const [isOpen[3], setisOpen[3]] = useState(false)
+    // const [isOpen[4], setisOpen[4]] = useState(true)
 
     const display1 =()=>{
-        setIsOpen1(true)
-        setIsOpen4(false)
-        setIsOpen2(false)
-        setIsOpen3(false)
-        setIsOpen5(false)
+        setIsOpen()
+
+        setIsOpen([true, false, false, false,false])
     }
     const display2 =()=>{
-        setIsOpen2(true)
-        setIsOpen1(false)
-        setIsOpen3(false)
-        setIsOpen4(false)
-        setIsOpen5(false)
+         setIsOpen([false, true, false, false,false])
     }
     const display3 =()=>{
-        setIsOpen3(true)
-        setIsOpen2(false)
-        setIsOpen1(false)
-        setIsOpen4(false)
-        setIsOpen5(false)
+         setIsOpen([false, false, true, false,false])
     }
     const display4 =()=>{
-        setIsOpen4(true)
-        setIsOpen2(false)
-        setIsOpen3(false)
-        setIsOpen1(false)
-        setIsOpen5(false)
+         setIsOpen([false, false, false, true,false])
     }
     const display5 =()=>{
-        setIsOpen4(false)
-        setIsOpen2(false)
-        setIsOpen3(false)
-        setIsOpen1(false)
-        setIsOpen5(true)
+         setIsOpen([false, false, false, false,true])
     }
 
 
@@ -60,22 +43,22 @@ export default function Section2() {
             <div className={style.box}>
                 <h4>Our Services</h4>
                 <ol>
-                    {isOpen5?<button className={style.click}  onClick={display5}>Music Production</button>:<button onClick={display5}>Music Production</button>}
+                    {isOpen[4]?<button className={style.click}  onClick={display5}>Music Production</button>:<button onClick={display5}>Music Production</button>}
 
 
-                    {isOpen2?<button className={style.click} onClick={display2}>Slur Academy</button>: <button onClick={display2}>Slur Academy</button>}
+                    {isOpen[1]?<button className={style.click} onClick={display2}>Slur Academy</button>: <button onClick={display2}>Slur Academy</button>}
 
-                    {isOpen3 ? <button className={style.click} onClick={display3}>Recoding Session</button> : <button onClick={display3}>Recoding Session</button> }
+                    {isOpen[2] ? <button className={style.click} onClick={display3}>Recoding Session</button> : <button onClick={display3}>Recoding Session</button> }
                     
                     
-                    {isOpen4?<button className={style.click} onClick={display4}>Mixing and Mastering</button>: <button onClick={display4}>Mixing and Mastering</button>}
+                    {isOpen[3]?<button className={style.click} onClick={display4}>Mixing and Mastering</button>: <button onClick={display4}>Mixing and Mastering</button>}
 
-                    {isOpen1?<button className={style.click}  onClick={display1}>Jingle</button>: <button onClick={display1}>Jingle</button>}
+                    {isOpen[0]?<button className={style.click}  onClick={display1}>Jingle</button>: <button onClick={display1}>Jingle</button>}
 
                 </ol>
                 
                 <ul className="container">
-                   {isOpen1 && 
+                   {isOpen[0] && 
                    
                     <motion.li  animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}} >
                        <div className={style.single}>
@@ -86,7 +69,7 @@ export default function Section2() {
                     </motion.li>
                    } 
 
-                   {isOpen2 &&
+                   {isOpen[1] &&
 
                     <motion.li animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}}  >
                        <div className={style.single}>
@@ -96,7 +79,7 @@ export default function Section2() {
                        </div>
                     </motion.li>
                    }
-                   {isOpen3 &&
+                   {isOpen[2] &&
 
                     <motion.li animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}} >
                        <div className={style.single}>
@@ -109,7 +92,7 @@ export default function Section2() {
                        </div>
                     </motion.li>
                    }
-                   {isOpen4 &&
+                   {isOpen[3] &&
 
                     <motion.li animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}} >
 
@@ -120,7 +103,7 @@ export default function Section2() {
                        </div>
                     </motion.li>
                    }
-                   {isOpen5 &&
+                   {isOpen[4] &&
 
                     <motion.li animate={{opacity:1, marginLeft: 0}} initial={{opacity:0, marginLeft:10}} exit={{opacity:0, marginLeft:10}} >
                        <div className={style.single}>

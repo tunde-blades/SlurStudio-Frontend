@@ -1,10 +1,9 @@
 import React,{ useState} from 'react'
 import {Link} from 'react-router-dom'
-// import {CSSTransition} from 'react-transition-group'
 import logo from '../../images/SlurArena Icon.png'
 import { useSpring, animated } from 'react-spring'
 import style from './style.module.css'
-import { FaAngleDown,  FaUserCircle} from 'react-icons/fa'
+import { FaAngleDown} from 'react-icons/fa'
 import Login from '../../components/registration/login/Login'
 
 
