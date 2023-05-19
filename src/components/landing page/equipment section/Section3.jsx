@@ -9,17 +9,26 @@ export default function Section3() {
             <div>
                 <div>
                   <h3>Equipments</h3>
-                  <p>Our studio is well equiped with one the best quality studio equipments that will give your lycris the exact sounds it demands</p>
+                  <p>Our studio is equipped with brilliant audio devices that will excite your music</p>
                 </div>
                 <br />
                 <ul className={style.equipments}>
-                  <li><FaMixer/>External Processors</li>                  
-                  <li><FaWatchmanMonitoring/>Monitor</li>
-                  <li><FaToolbox/> DAW</li>
-                  <li><FaMicrophone/>Microphones</li>
-                  <li><FaToggleOn/> USB Keyboard Controller</li>
-                  <li><FaAudible/>Audio Interface </li>
-                  <li><FaRecordVinyl/>Yamaha Console</li>
+                  <li><FaMixer/>M-Audio BX8</li>                  
+                  <li><FaWatchmanMonitoring/>Presonus Quantum</li>
+                  <li><FaToolbox/> AudioBox 44VSL</li>
+                  <li><FaMicrophone/>Rode NT2A Condenser Mic</li>
+                  <li><FaToggleOn/>M-Audio Code49</li>
+                  <li><FaAudible/>Behringer Truth B2030A</li>
+                  <li><FaMicrophone/>BM-800 Mic</li>
+                  <li><FaRecordVinyl/>Yamaha MG24/14FX Mixing Console</li>
+                  <li>FL-Studio</li>
+                  <li>Cubase 12 Pro</li>
+                  <li>Pro-tools</li>
+                  <li><FaMicrophone/>AKG 880S Dynamic Vocal Mic</li>
+                  <li>Composer Pro-XL Dynamics Processor</li>
+                  <li>Sonic Exciter SX3040</li>
+                  <li>Virtualizer FX2000</li>
+                  <li>Graphic EQ</li>
                 </ul>
             </div>
         </div>

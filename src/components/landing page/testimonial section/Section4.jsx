@@ -7,7 +7,7 @@ export default function Section4() {
     <div className={style.box}>
         <div className='container'>
         <div>
-            <h4>Our clients</h4>
+            <h4>What people are saying about Slur</h4>
             <div className={style.testimonial}>
                 <div className={style.testicontent}>
                     <div className={style.texthead}>
@@ -20,17 +20,14 @@ export default function Section4() {
                     <p>I really enjoyed working with the <b>slurStudio.</b>  I got 1k likes and 1.5k plays within a week on my first single
                     </p>
                 </div>
-                <div className={style.testicontent}>
-                    <div className={style.texthead}>
-                        <img src={image} alt=""/>
-                        <div>
-                            <h5>Davies Drey</h5>
-                            <small>Rapper</small>
-                        </div>
-                    </div>
-                    <p>I really enjoyed working with the <b>slurStudio.</b>  I got 1k likes and 1.5k plays within a week on my first single
-                    </p>
-                </div>
+            </div>
+        </div>
+
+
+        
+        <div>
+            <h4>What's New?</h4>
+            <div className={style.testimonial}>
                 <div className={style.testicontent}>
                     <div className={style.texthead}>
                         <img src={image} alt=""/>

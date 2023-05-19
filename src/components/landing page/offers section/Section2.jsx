@@ -10,11 +10,6 @@ export default function Section2() {
 
 
 const [isOpen,setIsOpen]= useState([false,false,false,false,true])
-    // const [isOpen[0], setisOpen[0]] = useState(false)
-    // const [isOpen[1], setisOpen[1]] = useState(false)
-    // const [isOpen[2], setisOpen[2]] = useState(false)
-    // const [isOpen[3], setisOpen[3]] = useState(false)
-    // const [isOpen[4], setisOpen[4]] = useState(true)
 
     const display1 =()=>{
         setIsOpen()
@@ -112,9 +107,10 @@ const [isOpen,setIsOpen]= useState([false,false,false,false,true])
                             </p>
                                 <ul>
                                     <small>This package includes:</small> 
-                                    <li>Beat (Digital Sountrack)</li>
-                                    <li>Recordings</li>
-                                    <li>Mixing & Mastering</li>
+                                    <li>Quality Beat</li>
+                                    <li>Clear Recording</li>
+                                    <li>Creative Mix & Mastering guaranteed.</li>
+                                    <small>Note: Infusion of Live Instruments attracts extra charges (except you come with your instrumentalists)</small>
                                 </ul>
                               
                             <button className='bookbtn'> <FaLink/> <Link to='/studioproduction'>Visit Page</Link></button>

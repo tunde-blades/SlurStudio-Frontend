@@ -144,57 +144,28 @@ const [hideMenuList, sethideList] = useState(true)
             </div>
            
             <ul className={style.list}>
-                <li onMouseLeave ={hideAllList}><span  onMouseEnter = {displayList} onClick = {displayList}><p>Blog post</p><FaAngleDown /></span>
-                    { showMenuList && <animated.menu style={fade}  className={style.display}>
-                          <li ><Link to='/topmusic'>
-                          Top 10 music
-                        </Link></li>
-                          <li><Link to='/topvideos'>
-                          Top 10 music videos
-                        </Link>
-                            </li>
-                          <li><Link to='/artistgossip'>
-                          Artist gossip
-                        </Link></li>
-                          <li><Link to='/upcoming'>
-                          Upcoming
-                        </Link></li>
-                        </animated.menu>}
+                <li onMouseLeave ={hideAllList}><span  onMouseEnter = {displayList} onClick = {displayList}><p>Production & Session</p></span>
                 </li>
-                <li onMouseLeave ={hideAllList}><span onMouseEnter = {displayList2} onClick = {displayList2}><p>Produced</p><FaAngleDown/></span>
-                {showMenuList2 &&
-                    <animated.menu style={fade2}>
-                      <li>
-                        <Link to='/beats'>
-                          Beats
-                        </Link>
-                      </li>
-                      <li><Link to='/musics'>
-                          Musics
-                        </Link></li>
-                        <li><Link to='/others'>
-                          Others
-                        </Link></li>
-                    </animated.menu>
-                }
+                <li onMouseLeave ={hideAllList}><span onMouseEnter = {displayList2} onClick = {displayList2}><p>Mixing & Mastering</p></span>
+               
                 </li>
-                <li onMouseLeave ={hideAllList}><span onMouseEnter = {displayList3} onClick = {displayList3}><p>Services</p><FaAngleDown/></span>
-                {showMenuList3 &&
-                    <animated.menu style={fade3}>
-                      <li><Link to='/sluracademy'>
-                          Slur Academy
-                        </Link></li>
-                      <li><Link to='/studioproduction'>
-                          Studio Production
-                        </Link>
-                        </li>
-                    </animated.menu>
-                }
-                    
+                <li onMouseLeave ={hideAllList}><span onMouseEnter = {displayList3} onClick = {displayList3}><p><Link to='/sluracademy'>
+                          Production Academy
+                        </Link></p></span>  
                 </li>
                 <li onMouseLeave ={hideAllList}><span onMouseEnter = {displayList4} onClick = {displayList4}><p>More</p><FaAngleDown/></span>
                 {showMenuList4 &&
                   <animated.menu style={fade4}>
+                     <li>
+                     <Link to='/beats'>
+                          Beat Store
+                        </Link>
+                    </li>
+                     <li>
+                     <Link to='/sample'>
+                          Sample Packs and Presets
+                        </Link>
+                    </li>
                     <li><a href='http://wa.me/2347060518866'>
                           Book session
                         </a></li>

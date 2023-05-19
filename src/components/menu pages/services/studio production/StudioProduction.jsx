@@ -23,10 +23,22 @@ export default function StudioProduction() {
           <header className={style.heads}>
             <h5>RECORDING SESSION</h5>
             <p>Our Recording Session is 6 Hours. You can choose to bring in your producer/engineer or work with ours.
-              <small>1 Session is N15,000 or $22</small>
             </p>
           </header>
           <section>
+
+                <menu>
+                  <picture><img src={image2} alt="" /></picture>
+                  <ol>
+                    <h5>Buy a Slot & Save 40% off Recording Session
+                    Class A Slot:</h5> 
+                    <li>1 Session (24Hours)</li>
+                    <li>Expires in 10 Months</li>
+                    <li>No extra charges</li>
+                    <small>= N15, 000</small>
+                  </ol>
+                </menu>
+
                 <menu>
                   <picture><img src={image7} alt="" /></picture>
                   <ol>
@@ -36,7 +48,7 @@ export default function StudioProduction() {
                     <li>You gain extra 7 free sessions</li>
                     <li>Expires in 10 Months</li>
                     <li>No extra charges</li>
-                    <small>= N200, 000  or $285</small>
+                    <small>= N200, 000</small>
                   </ol>
                 </menu>
 
@@ -48,7 +60,7 @@ export default function StudioProduction() {
                     <li>You gain extra 3 free sessions</li>
                     <li>Expires in 8 Months</li>
                     <li>No extra charges</li>
-                  <small> = N150, 000  or $215</small>
+                  <small> = N150, 000</small>
                   </ol>
                 </menu>
 
@@ -60,7 +72,7 @@ export default function StudioProduction() {
                     <li>You gain extra 2 free sessions</li>
                     <li>Expires in 5 Months</li>
                     <li>No extra charges</li>
-                    <small>= N90, 000  or  $130</small>
+                    <small>= N90, 000</small>
                   </ol>
                 </menu>
 
@@ -74,8 +86,8 @@ export default function StudioProduction() {
                {/* <picture><img src={image2} alt="" /></picture> */}
               <li>Mixing & Mastering (Mixed Beat + Vocal Stems) = N40,000  (or write it in dollar) $55</li>
               <li> Mixing & Mastering (Beat Stems + Vocal Stems) = N45,000  or $60</li>
-              <li>Mastering (below 4min) = N10,000 or $15</li>
-              <li>Mastering (above 4min) = N15,000  or $20</li>
+              <li>Mastering (below 4min) = N10,000</li>
+              <li>Mastering (above 4min) = N15,000</li>
             </ul>
           </section>
           <section className={style.stem}>
@@ -109,7 +121,7 @@ export default function StudioProduction() {
             </ol>
           </section>
           <header className={style.heads}>
-            <h5>Clients & Songs We Produced</h5>
+            <h5>Our top clients</h5>  
           </header>
           <section>
             <ul className={style.produced}>
